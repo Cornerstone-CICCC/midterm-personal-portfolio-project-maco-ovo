@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+:root {
+    --bg-gradient-top: #f4f7f9; 
+    --bg-gradient-bottom: #e5eff8;
+    --text-main: #333333;
+    --text-light: #666666;
+    --accent-blue: #00a8ff; /* Say Hello button color */
+    
+    /* Glassmorphism */
+    --glass-bg: rgba(255, 255, 255, 0.4);
+    --glass-border: rgba(255, 255, 255, 0.6);
+    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-main);
+    background: linear-gradient(135deg, var(--bg-gradient-top) 0%, var(--bg-gradient-bottom) 100%);
+    background-attachment: fixed;  /* fixed background */
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+
+
+
+/* ----- nav bar ----- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 15px 40px;
+    border-radius: 50px; 
+    
+    
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    
+    position: sticky; 
+    top: 20px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-blue);
+}
