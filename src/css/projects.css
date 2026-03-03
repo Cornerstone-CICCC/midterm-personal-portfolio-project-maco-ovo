@@ -1,0 +1,99 @@
+.projects-section {
+    padding: 60px 20px 100px;
+    text-align: center;
+}
+
+.projects-section h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+/* CSS Grid Layout */
+.projects-grid {
+    display: grid;
+    /* Automatically creates responsive columns */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Glassmorphism Card Style */
+.project-card {
+    position: relative;
+    border-radius: 35px; /* Extremely soft corners */
+    overflow: hidden;
+    display: block;
+    text-decoration: none;
+    aspect-ratio: 1 / 1; /* Forces the card to be a perfect square */
+    box-shadow: var(--glass-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white; /* Fallback */
+}
+
+/* Hover Effect for the card */
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(31, 38, 135, 0.1);
+}
+
+/* Background Image Style */
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Text overlay at the bottom of the card */
+.project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 25px 25px;
+    /* Dark gradient so white text is readable over the images */
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+    color: white;
+    text-align: left;
+}
+
+.project-info h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.project-info p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Category Tags */
+.tag {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 12px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.data-tag {
+    background: rgba(0, 168, 255, 0.4);
+    border: 1px solid rgba(255,255,255, 0.3);
+}
+
+.web-tag {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255,255,255, 0.3);
+}
