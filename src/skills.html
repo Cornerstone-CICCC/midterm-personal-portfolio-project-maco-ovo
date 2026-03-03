@@ -6,6 +6,7 @@
     <title>Skills</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/skills.css">
+    <script src="https://kit.fontawesome.com/1d583c8348.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -21,35 +22,54 @@
     
     <main>
         <section class="skills-section">
-            <h1>Technical & Soft Skills</h1>
+            <h1 class="section-title">Technical & Soft Skills</h1>
             
-            <div class="skills-container">
-                <div class="skill-category">
+            <div class="skills-grid">
+                
+                <div class="skill-card">
                     <h2>Data Science & Analytics</h2>
-                    <ul>
-                        <li>Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
-                        <li>Statistics (Hypothesis Testing, P-values, Z-tests)</li>
-                        <li>Big Data Processing</li>
-                    </ul>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-python"></i> Python (Pandas, NumPy)</span>
+                        <span class="skill-tag"><i class="fa-solid fa-database"></i> SQL (PostgreSQL)</span>
+                        <span class="skill-tag"><i class="fa-solid fa-chart-pie"></i> Data Vis (Matplotlib, Seaborn)</span>
+                        <span class="skill-tag"><i class="fa-solid fa-magnifying-glass-chart"></i> Statistics (P-values, Z-tests)</span>
+                        <span class="skill-tag"><i class="fa-solid fa-cloud"></i> Big Data Processing</span>
+                    </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-card">
                     <h2>Web Development</h2>
-                    <ul>
-                        <li>HTML5 & CSS3 (Flexbox, Grid)</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>Version Control (Git & GitHub)</li>
-                    </ul>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3"></i> HTML5 & CSS3</span>
+                        <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fa-brands fa-github-alt"></i> Git & GitHub</span>
+                        <span class="skill-tag"><i class="fa-solid fa-vial"></i> Jest Unit Testing</span>
+                    </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-card soft-skills-card">
                     <h2>Soft Skills</h2>
-                    <ul>
-                        <li>Bilingual (Japanese & English)</li>
-                        <li>Cross-functional Teamwork</li>
-                        <li>Analytical Problem Solving</li>
-                    </ul>
+                    
+                    <div class="soft-skills-flex">
+                        <div class="soft-category">
+                            <h3>Languages</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag"><i class="fa-solid fa-language"></i> Japanese (Native)</span>
+                                <span class="skill-tag"><i class="fa-solid fa-earth-americas"></i> English (IELTS 6.5)</span>
+                            </div>
+                        </div>
+
+                        <div class="soft-category">
+                            <h3>Professional</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag"><i class="fa-solid fa-brain"></i> Analytical Problem Solving</span>
+                                <span class="skill-tag"><i class="fa-solid fa-users"></i> Cross-functional Teamwork</span>
+                                <span class="skill-tag"><i class="fa-solid fa-arrows-rotate"></i> Adaptability</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </section>
     </main>
