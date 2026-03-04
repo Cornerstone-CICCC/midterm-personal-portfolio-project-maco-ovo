@@ -1,0 +1,105 @@
+
+.journey-section {
+    max-width: 1000px;
+    margin: 60px auto 100px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 80px;
+    color: var(--text-main);
+}
+
+.journey-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px; 
+}
+
+
+/* Each Row Layout */
+.journey-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Left Column */
+.journey-role {
+    flex: 0 0 220px; 
+}
+
+.role-badge {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #888888;
+    border-radius: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--text-main);
+    
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* Middle Column: Description */
+.journey-desc {
+    flex: 1; /* Takes up the remaining available space */
+}
+
+.journey-desc p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-main);
+}
+
+/* Right Column: The Vertical Line & Year */
+.journey-year {
+    flex: 0 0 150px;
+    display: flex;
+    align-items: center;
+    border-left: 2px solid var(--text-main); /* The black vertical line */
+    padding-left: 30px;
+}
+
+.journey-year span {
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: var(--text-main);
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .journey-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        background: rgba(255, 255, 255, 0.4);
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    .journey-role {
+        flex: auto;
+        width: 100%;
+    }
+
+    .journey-year {
+        border-left: none; /* Remove line on mobile */
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .journey-year span {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--accent-blue);
+    }
+}
