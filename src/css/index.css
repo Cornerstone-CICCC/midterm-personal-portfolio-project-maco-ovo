@@ -1,105 +1,96 @@
 
-/* ----- hero section ----- */
-.hero-section {
-    text-align: center;
-    padding: 120px 20px;
+/* ----- Transparent Navbar (Only for Home) ----- */
+.transparent-nav {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+body {
+    background: url('../images/white-bg.jpg') no-repeat center center fixed !important; 
+    background-size: cover !important;
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+/* ----- Hero Section ----- */
+.home-hero {
+    min-height: 70vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    padding: 0 5%;
+}
+
+.hero-content {
+    max-width: 700px;
+    text-align: center; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
-.hero-section h1 {
+.hero-content h1 {
     font-size: 4.5rem;
-    font-weight: 300;
+    font-weight: 200;
     margin-bottom: 20px;
-    letter-spacing: -1px;
+    letter-spacing: 1px;
+    color: var(--text-main); 
 }
 
-
-.gradient-text {
-    font-style: italic;
-    background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-}
-
-.hero-section p {
-    font-size: 1.2rem;
-    color: var(--text-light);
-    max-width: 600px;
-    margin-top: 20px;
+.hero-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    letter-spacing: 0.5px;
+    color: var(--text-light); 
 }
 
 
 
 
 
-/* ーーー Contact Section ーーー */
 
-.contact-section {
-    max-width: 600px;
-    margin: 0 auto 100px auto;
-    padding: 40px;
-    
+/* ----- Button & Icons ------ */
 
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    box-shadow: var(--glass-shadow);
-    border: 1px solid var(--glass-border);
-}
-
-.contact-section h1 {
-    text-align: center;
-    margin-bottom: 10px;
-    font-weight: 400;
-}
-
-.contact-section p {
-    text-align: center;
-    margin-bottom: 30px;
-    color: var(--text-light);
-}
-
-form {
+.hero-actions {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    justify-content: center; 
+    gap: 30px;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 15px;
-    border-radius: 10px;
-    border: 1px solid rgba(255,255,255, 0.8);
-    background: rgba(255,255,255, 0.6);
-    font-family: inherit;
-    font-size: 1rem;
-    outline: none;
-    transition: border 0.3s ease;
+.primary-btn {
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    padding: 10px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: var(--accent-blue);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
-input:focus, textarea:focus {
-    border-color: var(--accent-blue);
-}
-
-button {
+.primary-btn:hover {
     background: var(--accent-blue);
     color: white;
-    border: none;
-    padding: 15px;
-    border-radius: 30px; 
-    font-size: 1.1rem;
-    cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0, 168, 255, 0.3);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    margin-top: 10px;
 }
 
-button:hover {
-    transform: translateY(-2px); 
-    box-shadow: 0 6px 20px rgba(0, 168, 255, 0.4);
+.hero-socials {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-socials a {
+    font-size: 1.5rem;
+    color: var(--text-main);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-socials a:hover {
+    color: var(--accent-blue);
+    transform: translateY(-3px);
 }
