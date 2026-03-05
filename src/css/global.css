@@ -75,21 +75,21 @@ nav {
 }
 
 /* Cloud Icon */
-.fa-cloud {
-    font-size: 1.8rem;
+.nav-left .fa-cloud {
+    font-size: 1.5rem;
     color: var(--accent-blue);
     transition: transform 0.5s ease;
 }
 
-.fa-cloud:hover {
+.nav-left .fa-cloud:hover {
     transform: translateY(-2px);
 }
 
 nav a {
     text-decoration: none;
     color: var(--text-main);
-    font-weight: 400; 
-    font-size: 16px;
+    font-weight: 350; 
+    font-size: 15px;
     transition: color 0.3s ease;
 }
 
@@ -104,7 +104,7 @@ nav a:hover {
     border: 1px solid var(--accent-blue);
     padding: 8px 25px;
     border-radius: 30px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     transition: all 0.3s ease;
 }

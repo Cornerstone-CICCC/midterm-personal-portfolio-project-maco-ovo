@@ -1,4 +1,4 @@
-/* --- About Hero Section --- */
+/* ------ Hero Section ----- */
 .about-hero {
     height: 60vh;
     min-height: 400px;
@@ -35,7 +35,10 @@
 }
 
 
-/* --- Bio Section --- */
+
+
+/* ----- Bio Section ----- */
+
 .bio-section {
     max-width: 1000px;
     margin: 100px auto; 
@@ -51,7 +54,7 @@
 .bio-image {
     width: 40%;
     max-width: 400px;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 4.2 / 5;
     object-fit: cover;
     border-radius: 30px;
     box-shadow: var(--glass-shadow);
