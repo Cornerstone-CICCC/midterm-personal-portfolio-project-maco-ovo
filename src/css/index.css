@@ -100,6 +100,6 @@ button {
 }
 
 button:hover {
-    transform: translateY(-2px); /* ホバー時に少し浮き上がる */
+    transform: translateY(-2px); 
     box-shadow: 0 6px 20px rgba(0, 168, 255, 0.4);
 }

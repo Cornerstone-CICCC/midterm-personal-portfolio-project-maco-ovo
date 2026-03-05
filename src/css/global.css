@@ -35,14 +35,13 @@ body {
 
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between; 
     align-items: center;
-    width: 80%;
-    max-width: 900px;
+    width: 90%; 
+    max-width: 1100px; 
     margin: 40px auto;
-    padding: 20px 40px;
+    padding: 15px 40px; 
     border-radius: 50px; 
-    
     
     background: var(--glass-bg);
     backdrop-filter: blur(10px);
@@ -55,22 +54,64 @@ nav {
     z-index: 1000;
 }
 
-nav ul {
-    list-style: none;
+.nav-left {
+    flex: 1;
     display: flex;
-    gap: 20px;
+    justify-content: flex-start;
+}
+
+.nav-links {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 35px; 
+    list-style: none;
+}
+
+.nav-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Cloud Icon */
+.fa-cloud {
+    font-size: 1.8rem;
+    color: var(--accent-blue);
+    transition: transform 0.5s ease;
+}
+
+.fa-cloud:hover {
+    transform: translateY(-2px);
 }
 
 nav a {
     text-decoration: none;
     color: var(--text-main);
-    font-weight: 350;
-    font-size: 15px;
+    font-weight: 400; 
+    font-size: 16px;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
     color: var(--accent-blue);
+}
+
+/* Contact Button */
+.nav-btn {
+    background: var(--accent-blue);
+    color: white;
+    border: 1px solid var(--accent-blue);
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    color: white;
+    transform: translateY(-2px);
 }
 
 
