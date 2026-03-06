@@ -58,52 +58,51 @@ The goal of this assignment is to create a personal portfolio website that will 
 - Create a new branch for your second implementation and repeat the process.
 
 ```mermaid
-My Git Workflow
-Code snippet
 gitGraph
-    commit id: &quot;Init: setup repo&quot;
+    commit id: "Init: setup repo"
     
     branch feature/html-skeleton
-    commit id: &quot;Add base HTML&quot;
+    commit id: "Add base HTML"
     checkout main
     merge feature/html-skeleton
     
     branch style/base
-    commit id: &quot;Global styling &amp; Nav&quot;
+    commit id: "Global styling & Nav"
     checkout main
     merge style/base
     
     branch style/projects
-    commit id: &quot;CSS Grid &amp; hover effects&quot;
+    commit id: "CSS Grid & hover effects"
     checkout main
     merge style/projects
     
     branch style/about
-    commit id: &quot;Bio layout &amp; responsive&quot;
+    commit id: "Bio layout & responsive"
     checkout main
     merge style/about
     
     branch style/skills
-    commit id: &quot;Glassmorphism cards&quot;
+    commit id: "Glassmorphism cards"
     checkout main
     merge style/skills
     
     branch style/experience
-    commit id: &quot;Timeline layout&quot;
+    commit id: "Timeline layout"
     checkout main
     merge style/experience
     
     branch style/footer
-    commit id: &quot;Global footer&quot;
+    commit id: "Global footer"
     checkout main
     merge style/footer
 
     branch style/contact
-    commit id: &quot;Responsive fixes &amp; form&quot;
+    commit id: "Responsive fixes & form"
     checkout main
     merge style/contact
     
-    commit id: &quot;Deploy to Netlify&quot;
+    commit id: "Deploy to Netlify"
+    
 ```
 
 ## Content
