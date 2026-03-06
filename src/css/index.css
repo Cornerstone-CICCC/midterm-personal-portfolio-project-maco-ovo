@@ -6,6 +6,13 @@
     box-shadow: none !important;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
+    
+   
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 40px 8% !important;
+    border-radius: 0 !important;
 }
 
 body {
@@ -93,4 +100,22 @@ body {
 .hero-socials a:hover {
     color: var(--accent-blue);
     transform: translateY(-3px);
+}
+
+
+
+
+/* ----- Mobile Responsiveness ----- */
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem; 
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+    .hero-actions {
+        flex-direction: column; 
+        gap: 20px;
+    }
 }

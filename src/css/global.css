@@ -103,13 +103,13 @@ nav a:hover {
 
 @keyframes cloud-sway {
     0% {
-        transform: translateX(-8px);
+        transform: translateX(-10px);
     }
     50% {
-        transform: translateX(8px);
+        transform: translateX(10px);
     }
     100% {
-        transform: translateX(-8px);
+        transform: translateX(-10px);
     }
 }
 
@@ -189,4 +189,28 @@ nav a:hover {
 .social-links a:hover {
     color: var(--accent-blue);
     transform: translateY(-4px);
+}
+
+
+/* ----- Mobile Responsiveness ----- */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        border-radius: 20px;
+        width: 95%;
+    }
+    .nav-left, .nav-right {
+        justify-content: center;
+        width: 100%;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .nav-links a {
+        font-size: 14px;
+    }
 }

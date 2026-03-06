@@ -50,7 +50,7 @@
 
 /* Middle Column: Description */
 .journey-desc {
-    flex: 1; /* Takes up the remaining available space */
+    flex: 1; 
 }
 
 .journey-desc p {
@@ -59,12 +59,12 @@
     color: var(--text-main);
 }
 
-/* Right Column: The Vertical Line & Year */
+/* Right Column */
 .journey-year {
     flex: 0 0 150px;
     display: flex;
     align-items: center;
-    border-left: 2px solid var(--text-main); /* The black vertical line */
+    border-left: 2px solid var(--text-main);
     padding-left: 30px;
 }
 
@@ -74,6 +74,7 @@
     letter-spacing: 2px;
     color: var(--text-main);
 }
+
 
 /* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
@@ -92,7 +93,7 @@
     }
 
     .journey-year {
-        border-left: none; /* Remove line on mobile */
+        border-left: none; 
         padding-left: 0;
         margin-top: 10px;
     }

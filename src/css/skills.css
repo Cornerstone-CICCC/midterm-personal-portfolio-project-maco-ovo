@@ -115,3 +115,14 @@
     border-bottom: 1px solid var(--glass-border);
     padding-bottom: 10px;
 }
+
+/* ----- Mobile Responsiveness ----- */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.2rem;
+    }
+    .soft-skills-flex {
+        flex-direction: column; 
+        gap: 30px;
+    }
+}
