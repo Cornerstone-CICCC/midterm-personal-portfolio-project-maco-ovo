@@ -74,17 +74,6 @@ nav {
     justify-content: flex-end;
 }
 
-/* Cloud Icon */
-.nav-left .fa-cloud {
-    font-size: 1.5rem;
-    color: var(--accent-blue);
-    transition: transform 0.5s ease;
-}
-
-.nav-left .fa-cloud:hover {
-    transform: translateY(-2px);
-}
-
 nav a {
     text-decoration: none;
     color: var(--text-main);
@@ -96,6 +85,31 @@ nav a {
 nav a:hover {
     color: var(--accent-blue);
 }
+
+/* Cloud Icon */
+.nav-left .fa-cloud {
+    font-size: 1.5rem;
+    color: var(--accent-blue);
+
+    display: inline-block; 
+    will-change: transform;
+    animation: cloud-sway 6s ease-in-out infinite alternate;
+    transform-origin: center;
+}
+
+@keyframes cloud-sway {
+    0% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+
 
 /* Contact Button */
 .nav-btn {
@@ -146,6 +160,7 @@ nav a:hover {
 
     color: var(--text-light);
     font-size: 0.9rem;
+    font-weight: 200;
 }
 
 
@@ -165,4 +180,29 @@ nav a:hover {
 .social-links a:hover {
     color: var(--accent-blue);
     transform: translateY(-4px);
+}
+
+
+
+/* ----- Mobile Responsiveness ----- */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        border-radius: 20px;
+        width: 95%;
+    }
+    .nav-left, .nav-right {
+        justify-content: center;
+        width: 100%;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .nav-links a {
+        font-size: 14px;
+    }
 }

@@ -121,9 +121,14 @@
     transform: translateY(-5px);
 }
 
-.card-icon {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+.fa-book-open-reader {
+    font-size: 1.5rem;
+    color: var(--accent-blue);
+}
+
+.fa-icons {
+    font-size: 1.5rem;
+    color: var(--accent-blue);
 }
 
 .passion-card h3 {
@@ -171,4 +176,52 @@
 
 .love-content h3 {
     color: white;
+}
+
+
+
+/* ----- Mobile Responsiveness ----- */
+
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+    .bio-container {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .bio-image {
+        width: 70%;
+        max-width: 300px;
+    }
+    .bio-text {
+        width: 100%;
+    }
+    .bio-text .vision-title {
+        margin-top: 20px;
+    }
+}
+
+
+
+/* ----- Mobile Responsiveness ----- */
+
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+    .bio-container {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .bio-image {
+        width: 70%;
+        max-width: 300px;
+    }
+    .bio-text {
+        width: 100%;
+    }
+    .bio-text .vision-title {
+        margin-top: 20px;
+    }
 }
