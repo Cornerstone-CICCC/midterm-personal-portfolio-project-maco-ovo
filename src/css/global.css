@@ -74,8 +74,6 @@ nav {
     justify-content: flex-end;
 }
 
-
-
 nav a {
     text-decoration: none;
     color: var(--text-main);
@@ -87,8 +85,6 @@ nav a {
 nav a:hover {
     color: var(--accent-blue);
 }
-
-
 
 /* Cloud Icon */
 .nav-left .fa-cloud {
@@ -115,7 +111,6 @@ nav a:hover {
 
 
 
-
 /* Contact Button */
 .nav-btn {
     background: var(--accent-blue);
@@ -137,7 +132,6 @@ nav a:hover {
 
 
 /* ----- Footer ----- */
-
     /* for home */
 .site-footer p {
     color: var(--text-light);
@@ -190,6 +184,7 @@ nav a:hover {
     color: var(--accent-blue);
     transform: translateY(-4px);
 }
+
 
 
 /* ----- Mobile Responsiveness ----- */
