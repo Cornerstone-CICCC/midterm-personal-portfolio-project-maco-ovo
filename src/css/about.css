@@ -9,24 +9,84 @@
     text-align: center;
     
     background-image: url('../images/sky3.JPG');
+    background-image: url('../images/float-cloud1.png') url('../images/float-cloud2.png') url('../images/float-cloud3.png');
     background-size: cover;
     background-position: center;
+
+    position: relative;
+    overflow: hidden;
 }
 
 .about-hero h1 {
+    position: relative;
     font-size: 3.5rem;
     font-weight: 300;
     margin-bottom: 30px; 
     line-height: 1.2;
+    z-index: 10;
 }
 
 .about-hero p {
+    position: relative;
     font-size: 1.2rem;
     color: #ffffff; 
     letter-spacing: 1px;
     text-shadow: 0 2px 10px rgba(0,0,0,0.3); 
+    z-index: 10;
 }
 
+/* Base styles for all clouds */
+.floating-cloud {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain; /* Ensures the whole cloud fits in its box */
+    z-index: 1; /* Puts them above the sky background, but behind the text */
+    opacity: 0.8; /* Makes them slightly transparent. Change to 1 for solid clouds */
+}
+
+/* Individual Cloud Settings & Animations */
+.cloud1 {
+    width: 300px;
+    height: 150px;
+    background-image: url('../images/float-cloud1.png');
+    top: 15%;
+    left: -20%; /* Start slightly off-screen */
+    animation: floatRight 45s linear infinite;
+}
+
+.cloud2 {
+    width: 450px;
+    height: 250px;
+    background-image: url('../images/float-cloud2.png');
+    top: 45%;
+    right: -30%;
+    animation: floatLeft 60s linear infinite; /* Slower, moving the opposite way */
+}
+
+.cloud3 {
+    width: 200px;
+    height: 100px;
+    background-image: url('../images/float-cloud3.png');
+    bottom: 10%;
+    left: 10%;
+    animation: floatBob 20s ease-in-out infinite alternate; /* Gentle bobbing */
+}
+
+/* --- Cloud Animations --- */
+@keyframes floatRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(120vw); } /* Moves all the way across the screen */
+}
+
+@keyframes floatLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-120vw); }
+}
+
+@keyframes floatBob {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(40px, -20px); }
+}
 
 .white-text {
     color: #ffffff;
